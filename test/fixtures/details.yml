@@ -1,0 +1,43 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Name: MyString
+  Years_Of_Experience: 1
+  Career_Highlights: MyString
+  Primary_Skills: MyString
+  Secondary_Skills: MyString
+  Company: MyString
+  Position: MyString
+  Start_Date: 2022-01-20
+  End_Date: 2022-01-20
+  Description: MyString
+  Title: MyString
+  Project_URL: MyString
+  Tech_Stack: MyString
+  Overview: MyString
+  School: MyString
+  Degree: MyString
+  Grade: MyString
+  Beginning_date: 2022-01-20
+  Finish_Date: 2022-01-20
+
+two:
+  Name: MyString
+  Years_Of_Experience: 1
+  Career_Highlights: MyString
+  Primary_Skills: MyString
+  Secondary_Skills: MyString
+  Company: MyString
+  Position: MyString
+  Start_Date: 2022-01-20
+  End_Date: 2022-01-20
+  Description: MyString
+  Title: MyString
+  Project_URL: MyString
+  Tech_Stack: MyString
+  Overview: MyString
+  School: MyString
+  Degree: MyString
+  Grade: MyString
+  Beginning_date: 2022-01-20
+  Finish_Date: 2022-01-20

@@ -1,0 +1,139 @@
+<%= form_with(model: detail) do |form| %>
+  <% if detail.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(detail.errors.count, "error") %> prohibited this detail from being saved:</h2>
+
+      <ul>
+        <% detail.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+  <div class="field form-group">
+    <h3>Profile Details</h3>
+    <%= form.label :Name, style: "display: block" %>
+    <%= form.text_field :Name, class:"form-control" %>
+  </div>
+  <br>
+
+
+  <div class="field form-group">
+   
+    <%= form.label :Profile_Image %>
+    <%= form.file_field :image %>
+  </div>
+
+  <br>
+
+  <div class="field form-group">
+    <%= form.label :Years_Of_Experience, style: "display: block" %>
+    <%= form.text_field :Years_Of_Experience, class:"form-control" %>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :Career_Highlights, style: "display: block" %>
+    <%= form.text_field :Career_Highlights, class:"form-control" %>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :Primary_Skills, style: "display: block" %>
+    <%= form.text_field :Primary_Skills, class:"form-control"  %>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :Secondary_Skills, style: "display: block" %>
+    <%= form.text_field :Secondary_Skills, class:"form-control" %>
+  </div>
+
+  <div class="field form-group">
+    <h3>Experiences</h3>
+    <%= form.label :Company, style: "display: block" %>
+    <%= form.text_field :Company, class:"form-control" %>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :Position, style: "display: block" %>
+    <%= form.text_field :Position, class:"form-control" %>
+  </div>
+  <br>
+
+  <div class="field form-group">
+    <%= form.label :Start_Date, style: "display: block" %>
+    <%= form.date_field :Start_Date, class:"form-control" %>
+  </div>
+<br>
+  <div>
+    <%= form.label :End_Date, style: "display: block" %>
+    <%= form.date_field :End_Date, class:"form-control" %>
+  </div>
+  <br>
+
+  <div class="field form-group">
+    <%= form.label :Description, style: "display: block" %>
+    <%= form.text_field :Description, class:"form-control" %>
+  </div>
+
+  <div>
+    <h3>Projects</h3>
+    <%= form.label :Title, style: "display: block" %>
+    <%= form.text_field :Title, class:"form-control" %>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :Project_URL, style: "display: block" %>
+    <%= form.text_field :Project_URL, class:"form-control" %>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :Tech_Stack, style: "display: block" %>
+    <%= form.text_field :Tech_Stack, class:"form-control" %>
+  </div>
+
+  <div>
+    <%= form.label :Overview, style: "display: block" %>
+    <%= form.text_field :Overview, class:"form-control" %>
+  </div>
+
+  <div class="field form-group">
+    <h3>Education</h3>
+    <%= form.label :School, style: "display: block" %>
+    <%= form.text_field :School, class:"form-control" %>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :Degree, style: "display: block" %>
+    <%= form.text_field :Degree, class:"form-control" %>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :Grade, style: "display: block" %>
+    <%= form.text_field :Grade, class:"form-control" %>
+   
+  </div>
+<br>
+  <div class="field form-group">
+    <%= form.label :Beginning_date, style: "display: block" %>
+    <%= form.date_field :Beginning_date %>
+  </div>
+  <br>
+
+  <div class="field form-group">
+    <%= form.label :Finish_Date, style: "display: block" %>
+    <%= form.date_field :Finish_Date, class:"form-control" %>
+  </div>
+
+<div class="field form-group">
+
+    <%form.label :user_id, style: "display: block" %>
+    <%= form.number_field :user_id, id: :details_user_id, class:"form-control", value: current_user.id,type: :hidden%>
+  </div>
+ 
+
+<br>
+  <div class="field form-group">
+    <%= form.submit class:'btn btn-secondary' %>
+  </div>
+<% end %> 

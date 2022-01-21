@@ -1,0 +1,115 @@
+<div id="<%= dom_id detail %>">
+
+ <!--   <% if detail.user ==current_user %>   -->
+  <p>
+    <strong>Name:</strong>
+    <%= detail.Name %>
+  </p>
+
+  <div style="width:400px; height:auto">
+  <%= link_to image_tag(detail.image,style: "width:100%"), details_path %>
+</div>
+
+  <p>
+    <strong>Years of experience:</strong>
+    <%= detail.Years_Of_Experience %>
+  </p>
+
+  <p>
+    <strong>Career highlights:</strong>
+    <%= detail.Career_Highlights %>
+  </p>
+
+  <p>
+    <strong>Primary skills:</strong>
+    <%= detail.Primary_Skills %>
+  </p>
+
+  <p>
+    <strong>Secondary skills:</strong>
+    <%= detail.Secondary_Skills %>
+  </p>
+
+  <p>
+    <strong>Company:</strong>
+    <%= detail.Company %>
+  </p>
+
+  <p>
+    <strong>Position:</strong>
+    <%= detail.Position %>
+  </p>
+ 
+
+  <p>
+    <strong>Start date:</strong>
+    <%= detail.Start_Date %>
+  </p>
+  
+
+  <p>
+    <strong>End date:</strong>
+    <%= detail.End_Date %>
+  </p>
+  
+
+  <p>
+    <strong>Description:</strong>
+    <%= detail.Description %>
+  </p>
+
+  <p>
+    <strong>Title:</strong>
+    <%= detail.Title %>
+  </p>
+
+  <p>
+    <strong>Project url:</strong>
+    <%= detail.Project_URL %>
+  </p>
+
+  <p>
+    <strong>Tech stack:</strong>
+    <%= detail.Tech_Stack %>
+  </p>
+
+  <p>
+    <strong>Overview:</strong>
+    <%= detail.Overview %>
+  </p>
+
+  <p>
+    <strong>School:</strong>
+    <%= detail.School %>
+  </p>
+
+  <p>
+    <strong>Degree:</strong>
+    <%= detail.Degree %>
+  </p>
+
+  <p>
+    <strong>Grade:</strong>
+    <%= detail.Grade %>
+  </p>
+ 
+
+  <p>
+    <strong>Beginning date:</strong>
+    <%= detail.Beginning_date %>
+  </p>
+
+
+  <p>
+    <strong>Finish date:</strong>
+    <%= detail.Finish_Date %>
+  </p>
+
+<p>
+    <strong>User Id</strong>
+    <%= detail.user_id %>
+  </p>
+<!-- 
+  <%end%> -->
+
+</div>

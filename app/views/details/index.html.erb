@@ -1,0 +1,20 @@
+<p style="color: green"><%= notice %></p>
+
+<br>
+<div class= "row h-100 justify-content-center align-items-center">
+  <h1>Build Your Resume</h1>
+  <br>
+  <%= link_to "New detail", new_detail_path %>
+ </div>
+ 
+<div id="details">
+  <% @details.each do |detail| %>
+    <%= render detail %>
+    <p>
+      <!-- %= button_to "Destroy this detail", @detail, method: :delete %> -->
+      <%= link_to "Show this detail", detail %>
+    </p>
+  <% end %>
+</div>
+
+
